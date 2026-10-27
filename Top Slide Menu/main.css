@@ -1,0 +1,87 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: #fff;
+    color: #303e12;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Logo */
+.left-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #262626;
+}
+
+/* Menu Button */
+.right-menu {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Menu Container */
+.left-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #262626;
+    overflow: auto;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    z-index: 10;
+}
+
+/* Open Menu */
+.left-menu.open-menu {
+    transform: translateY(0);
+}
+
+/* Close Button */
+#closebtn {
+    color: white;
+    cursor: pointer;
+    padding: 20px 30px;
+    text-align: right;
+    font-size: 18px;
+}
+
+/* Menu List */
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    list-style: none;
+}
+
+/* Menu Links */
+a {
+    text-decoration: none;
+    color: #a9d748;
+    font-size: 20px;
+}
+
+/* Hover Effect */
+a:hover {
+    color: white;
+}
